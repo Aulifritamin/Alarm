@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _alarmSound: {fileID: 8300000, guid: c0fa802f36e02734dbd42fb4e1d81dbd, type: 3}
-  _door: {fileID: 1939029770}
+  _volumeChangeSpeed: 0.5
 --- !u!82 &1291813333
 AudioSource:
   m_ObjectHideFlags: 0
@@ -899,6 +899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426865451}
   - component: {fileID: 1426865453}
+  - component: {fileID: 1426865454}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -941,6 +942,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20.224884, y: 6.025016, z: 12.854257}
   m_Center: {x: -6.6919785, y: 2.512508, z: -0.7643285}
+--- !u!114 &1426865454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426865450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353342e361d15b0468d0704abc203089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _alarm: {fileID: 1291813332}
+  _houseTrigger: {fileID: 1939029770}
 --- !u!1 &1646132222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939029763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea9cc81fb566084a82943d9dd74de6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 865f427c36d27314a95f526f1c95077f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2021106412

@@ -5,8 +5,8 @@ public class Character : MonoBehaviour
 {
     [SerializeField] private float _speed = 2f;
     private Vector3 _moveDirection;
-    private string _horizontalInput = "Horizontal";
-    private string _verticalInput = "Vertical";
+    private const string HorizontalInput = "Horizontal";
+    private const string VerticalInput = "Vertical";
 
     private Rigidbody _rigidBody;
 
@@ -31,8 +31,8 @@ public class Character : MonoBehaviour
 
     private void Move()
     {
-        float moveX = Input.GetAxis(_horizontalInput);
-        float moveZ = Input.GetAxis(_verticalInput);
+        float moveX = Input.GetAxis(HorizontalInput);
+        float moveZ = Input.GetAxis(VerticalInput);
 
         Vector3 localMove = new Vector3(moveX, 0, moveZ);
         _moveDirection = transform.TransformDirection(localMove);
